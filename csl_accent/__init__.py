@@ -22,6 +22,7 @@ def accent_line(line):
         else:
             words[j] = words_rule[j]
     new_line = ' '.join(words)
+    new_line = re.sub("'", "́", new_line)
     return new_line
 
 
