@@ -6,14 +6,14 @@ with open("README.md", "r") as fh:
 requirements = ["requests>=2.21.0", "russtress"]
 
 setuptools.setup(
-    name="ru_accent_poet",
-    version="0.1.5",
-    author="Julia Korotkova",
-    author_email="koylenka15@gmail.com",
-    description="A package for putting stress marks in russian poetic texts",
+    name="csl_accent",
+    version="0.0.1",
+    author="Julia Korotkova, Panteleimon Korolev",
+    author_email="pantlmn@gmail.com",
+    description="A package for putting stress marks in Church Slavonic texts in grazhdanitsa encoding",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yuliya1324/ru_accent",
+    url="https://github.com/pantlmn/csl_accent",
     packages=setuptools.find_packages(),
     install_requires=requirements,
     classifiers=[

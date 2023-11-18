@@ -1,23 +1,23 @@
-# ru_accent_poet
+# csl_accent
 
-This is a tool for putting stress marks in russian poetic texts 
+This is a tool for putting stress marks in Church Slavonic texts in grazhdanitsa encoding
 
 ### Installation
 ```
-pip install ru-accent-poet
+pip install git+https://github.com/pantlmn/csl_accent.git@main
 ```
 ### Usage example
 
 To put stress marks in text
 ```
->>> from ru_accent_poet import accent_line
->>> accent_line('Ýòî èíñòðóìåíò äëÿ ðàçìåòêè óäàðåíèé')
-Ý'òî èíñòðóìå'íò äëÿ ðàçìå'òêè óäàðå'íèé
+>>> from csl_accent import accent_line
+>>> accent_line('Ð­Ñ‚Ð¾ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚ Ð´Ð»Ñ Ñ€Ð°Ð·Ð¼ÐµÑ‚ÐºÐ¸ ÑƒÐ´Ð°Ñ€ÐµÐ½Ð¸Ð¹')
+Ð­'Ñ‚Ð¾ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼Ðµ'Ð½Ñ‚ Ð´Ð»Ñ Ñ€Ð°Ð·Ð¼Ðµ'Ñ‚ÐºÐ¸ ÑƒÐ´Ð°Ñ€Ðµ'Ð½Ð¸Ð¹
 ```
 
 To put stress marks in files
 ```
->>> ru_accent_poet.write_file(['my_file_1.txt'])
+>>> csl_accent.write_file(['my_file_1.txt'])
 ```
 
 This will return new file called 
