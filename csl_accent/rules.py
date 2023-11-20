@@ -86,7 +86,7 @@ def main():
 di = defaultdict(str)
 # di = read_dict(os.path.join(BASE_DIR, 'accent1.dic'), di)
 # di = read_dict(os.path.join(BASE_DIR, 'accent.dic'), di)
-di = read_dict(os.path.join(BASE_DIR, 'accent.utf.dic'), di)
+di = read_dict(os.path.join(BASE_DIR, 'csl.dic'), di)
 
 
 if __name__ == '__main__':
