@@ -2,3 +2,5 @@ include README.md
 include LICENSE
 include csl_accent/accent.dic
 include csl_accent/accent1.dic
+include csl_accent/accent.utf.dic
+include csl_accent/accent1.utf.dic

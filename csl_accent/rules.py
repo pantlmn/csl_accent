@@ -6,7 +6,7 @@ import sys
 BASE_DIR = os.path.dirname(__file__)
 
 def read_dict(filename, dic):
-    with open(filename, encoding='cp1251') as file_read:
+    with open(filename, encoding='utf-8') as file_read:
         for line in file_read:
             if line.split():
                 word, acc = line.split()
@@ -84,8 +84,9 @@ def main():
 
 
 di = defaultdict(str)
-di = read_dict(os.path.join(BASE_DIR, 'accent1.dic'), di)
-di = read_dict(os.path.join(BASE_DIR, 'accent.dic'), di)
+# di = read_dict(os.path.join(BASE_DIR, 'accent1.dic'), di)
+# di = read_dict(os.path.join(BASE_DIR, 'accent.dic'), di)
+di = read_dict(os.path.join(BASE_DIR, 'accent.utf.dic'), di)
 
 
 if __name__ == '__main__':
