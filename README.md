@@ -11,8 +11,8 @@ pip install git+https://github.com/pantlmn/csl_accent.git@main
 To put stress marks in text
 ```
 >>> from csl_accent import accent_line
->>> accent_line('Это инструмент для разметки ударений')
-Э'то инструме'нт для разме'тки ударе'ний
+>>> accent_line('О богоблаженне и приснопамятне отче наш Данииле!')
+О, богоблаже́нне и приснопа́мятне о́тче наш Дании́ле!
 ```
 
 To put stress marks in files
