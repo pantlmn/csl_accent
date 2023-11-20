@@ -59,12 +59,10 @@ def accentw(word):
 
 
 def accent_line_rules(line):
-    words = re.findall('[А-яЁё-]+', line)
-    for word in words:
-        new_word = accentw(word)
-        if (not re.search(fr"{word}'", line)) and (word != new_word):
-            line = re.sub(word, new_word, line)
-    return line
+    words = re.split(r'([А-яЁё-]+)', line)
+    for i, word in enumerate(words):
+        words[i] = accentw(word) 
+    return "".join(words)
 
 
 def accent_rules(files):
